@@ -218,11 +218,11 @@
 
 //KEY/VALUE/OBJECTS
 
-var Maria={
-	"Eyes":"Green",
-	"Age":24,
-	"Favorite drink":"Tea"
-	 };
+// var Maria={
+// 	"Eyes":"Green",
+// 	"Age":24,
+// 	"Favorite drink":"Tea"
+// 	 };
 
 // console.log(Maria["Eyes"]);
 // console.log(Maria.Age); // точечная натация
@@ -368,23 +368,110 @@ var Maria={
 // }
 
 
-var n=prompt("Enter the number");
-n=parseInt(n);
-if ((n%2==0)&&(n!=2))
-     document.write("composite number");
-else if (n==2)
-     document.write("prime number");
-else{
-     k=Math.round(Math.sqrt(n));
-     flag = false; 
-     for(i=2; i<k+1; i++)
-        if(n%i==0)
-        {
-          document.write("composite number");
-          flag = true;
-          break;
-         }
+// var n=prompt("Enter the number");
+// n=parseInt(n);
+// if ((n%2==0)&&(n!=2))
+//      document.write("composite number");
+// else if (n==2)
+//      document.write("prime number");
+// else{
+//      k=Math.round(Math.sqrt(n));
+//      flag = false; 
+//      for(i=2; i<k+1; i++)
+//         if(n%i==0)
+//         {
+//           document.write("composite number");
+//           flag = true;
+//           break;
+//          }
             
-     if (flag == false)
-       document.write("prime number");
+//      if (flag == false)
+//        document.write("prime number");
+// }
+
+// var name = prompt("Как тебя зовут?");
+// console.log("Привет, " + name);
+// var  likeOrange = confirm("Тебе нравяться апельсины?");
+// if(likeOrange){
+// 	console.log("Эти фрукты очень вкусные!");
+// }
+// else{
+// 	console.log("Мне тоже больше нравяться бананы!");
+// }
+
+//     var words = [
+//       "яблоко",
+//       "арбуз",
+//       "программа",
+//       "оладушек"
+//     ];
+//   var word = words[Math.floor(Math.random() * words.length)];
+//   var answerArray = [];
+//   for (var i = 0; i < word.length; i++) {
+//     answerArray[i] = "_";
+//   }
+//   var remainingLetters = word.length;
+//   while (remainingLetters > 0) {
+//     alert(answerArray.join(" "));
+//       var guess = prompt("Угадайте букву, или нажмите Отмена для выхода из игры.");
+//       if (guess === null) {
+//             break;
+//           } else if (guess.length !== 1) {
+//             alert("Пожалуйста, введите одиночную букву.");
+//           } else {
+//             for (var j = 0; j < word.length; j++) {
+//               if (word[j] === guess) {
+//                 answerArray[j] = guess;
+//                 remainingLetters--;
+// } }
+// }
+
+// }
+//         alert(answerArray.join(" "));
+//         alert("Отлично! Было загадано слово " + word);
+
+// var sayHelloTo = function(name){
+// 	console.log("Привет " + name + "!" );
+// };
+ // var kittens = function(HowManySmiles){
+ // 	for(var i = 0; < HowManySmiles; i++){
+ // 		console.log(i + "=^.^=");
+ // 	}
+ // }
+
+ // var printLotSmiles = function(HowManySmiles,whatToDraw){
+ // 	for(var i = 0; i < HowManySmiles; i++){
+ // 		console.log(i + "" + whatToDraw);
+ // 	}
+ // };
+
+ // var stork = function (number){
+ // 	return number * 2;
+ // };
+ // 
+// var chooseRandomWords = function (words){
+// 	return words[Math.floor(Math.random()* words.length)];
+// }
+// var bodyPart = ["Рука","Голова","Нога"];
+// var adjective = ["грязная","вонючая","волосатая"];
+// var troll = ["корова","крыса","бяка","мартышка","солянка",];
+// var oskorblenie = "У тебя " + chooseRandomWords(bodyPart) + " как " + chooseRandomWords(adjective) + " " + chooseRandomWords(troll) + "!";
+// console.log(oskorblenie);
+
+prime(55);
+
+function prime(num) {
+
+  if (typeof num !== "number")
+ 	document.write("PLEASE ENTER NUMBER");
+
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      document.write("this number " + num + " is not a prime number");
+      return false;
+    }
+
+    document.write("this number " + num + " is a prime number");
+    return true;
+  }
 }
