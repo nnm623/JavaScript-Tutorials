@@ -507,7 +507,7 @@ function myFunction() {
 		document.getElementById("demo").innerHTML = ("#FFFF00") + "<div style='width:100px;height:50px;background:yellow'></div>";
 		break;
 	default:
-		document.getElementById("demo").innerHTML = ("please insert a color name");
+		document.getElementById("demo").innerHTML = ("NO COLOR");
 
 }
         } 
