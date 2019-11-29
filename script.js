@@ -483,31 +483,31 @@ function myFunction() {
 	document.getElementById("demo").innerHTML = x;
 	switch (x) {
 	case "red":
-		document.write("#FF0000" + "<div style='width:100px;height:50px;background:red'></div>");
+		document.getElementById("demo").innerHTML = ("#FF0000" + "<div style='width:100px;height:50px;background:red'></div>");
 		break;
 	case "RED":
-		document.write("#FF0000" + "<div style='width:100px;height:50px;background:red'></div>");
+		document.getElementById("demo").innerHTML = ("#FF0000" + "<div style='width:100px;height:50px;background:red'></div>");
 		break;
 	case "black":
-		document.write("#000000" + "<div style='width:100px;height:50px;background:black'></div>");
+		document.getElementById("demo").innerHTML = ("#000000" + "<div style='width:100px;height:50px;background:black'></div>");
 		break;
 	case "BLACK":
-		document.write("#000000" + "<div style='width:100px;height:50px;background:black'></div>");
+		document.getElementById("demo").innerHTML = ("#000000" + "<div style='width:100px;height:50px;background:black'></div>");
 		break;
 	case "pink":
-		document.write("#FFC0CB" + "<div style='width:100px;height:50px;background:pink'></div>");
+		document.getElementById("demo").innerHTML = ("#FFC0CB" + "<div style='width:100px;height:50px;background:pink'></div>");
 		break;
 	case "PINK":
-		document.write("#FFC0CB" + "<div style='width:100px;height:50px;background:pink'></div>");
+		document.getElementById("demo").innerHTML = ("#FFC0CB" + "<div style='width:100px;height:50px;background:pink'></div>");
 		break;
 	case "yellow":
-		document.write("#FFFF00") + "<div style='width:100px;height:50px;background:yellow'></div>";
+		document.getElementById("demo").innerHTML = ("#FFFF00") + "<div style='width:100px;height:50px;background:yellow'></div>";
 		break;
 	case "YELLOW":
-		document.write("#FFFF00") + "<div style='width:100px;height:50px;background:yellow'></div>";
+		document.getElementById("demo").innerHTML = ("#FFFF00") + "<div style='width:100px;height:50px;background:yellow'></div>";
 		break;
 	default:
-		document.write("please insert a color name");
+		document.getElementById("demo").innerHTML = ("please insert a color name");
 
 }
         } 
