@@ -458,20 +458,57 @@
 // var oskorblenie = "У тебя " + chooseRandomWords(bodyPart) + " как " + chooseRandomWords(adjective) + " " + chooseRandomWords(troll) + "!";
 // console.log(oskorblenie);
 
-prime(55);
+// prime(55);
 
-function prime(num) {
+// function prime(num) {
 
-  if (typeof num !== "number")
- 	document.write("PLEASE ENTER NUMBER");
+//   if (typeof num !== "number")
+//  	document.write("PLEASE ENTER NUMBER");
 
-  for (let i = 2; i < num; i++) {
-    if (num % i === 0) {
-      document.write("this number " + num + " is not a prime number");
-      return false;
-    }
+//   for (let i = 2; i < num; i++) {
+//     if (num % i === 0) {
+//       document.write("this number " + num + " is not a prime number");
+//       return false;
+//     }
 
-    document.write("this number " + num + " is a prime number");
-    return true;
-  }
+// 	   document.write("this number " + num + " is a prime number");
+// 	   return true;
+//   }
+// }
+
+// var a = 99;
+  
+function myFunction() { 
+	var x =  document.getElementById("myText").value;
+	document.getElementById("demo").innerHTML = x;
+	switch (x) {
+	case "red":
+		document.write("#FF0000" + "<div style='width:100px;height:50px;background:red'></div>");
+		break;
+	case "RED":
+		document.write("#FF0000" + "<div style='width:100px;height:50px;background:red'></div>");
+		break;
+	case "black":
+		document.write("#000000" + "<div style='width:100px;height:50px;background:black'></div>");
+		break;
+	case "BLACK":
+		document.write("#000000" + "<div style='width:100px;height:50px;background:black'></div>");
+		break;
+	case "pink":
+		document.write("#FFC0CB" + "<div style='width:100px;height:50px;background:pink'></div>");
+		break;
+	case "PINK":
+		document.write("#FFC0CB" + "<div style='width:100px;height:50px;background:pink'></div>");
+		break;
+	case "yellow":
+		document.write("#FFFF00") + "<div style='width:100px;height:50px;background:yellow'></div>";
+		break;
+	case "YELLOW":
+		document.write("#FFFF00") + "<div style='width:100px;height:50px;background:yellow'></div>";
+		break;
+	default:
+		document.write("please insert a color name");
+
 }
+        } 
+
